@@ -63,12 +63,16 @@
 }
 
 .main__content h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "Poppins", sans-serif;
 }
 
+.main__content h3 {
+  font-size: 2rem;
+}
+
 .main__content p {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -99,52 +103,58 @@
   padding-left: 10px;
 }
 
-/* Mobile Responsive */
-/* @media screen and (max-width: 768px) {
-  .main__container {
-    display: grid;
-    grid-template-columns: auto;
-    align-items: center;
-    justify-self: center;
+/* ABOUT SECTION */
+
+.about__container {
+  margin: 150px 100px 150px 100px;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 5rem;
+}
+
+.about__card h3 h1 p {
+  padding-left: 20px;
+  display: inline-block;
+
+  @media (max-width: 620px) {
     width: 100%;
-    margin: 0 auto;
-    height: 90vh;
-  }
-
-  .main__content {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .main__content h1 {
-    font-size: 2.5rem;
-    margin-top: 2rem;
-  }
-
-  .main__content h2 {
-    font-size: 3rem;
-  }
-
-  .main__content p {
-    margin-top: 1rem;
-    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .main__content h1 {
-    font-size: 2rem;
-    margin-top: 3rem;
-  }
+.about__card h1 {
+  background: -webkit-linear-gradient(rgb(165, 70, 255), rgb(202, 255, 246));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .main__content h2 {
-    font-size: 2rem;
-  }
+.about__card h3 {
+  font-family: "DM Serif Display", serif;
+}
 
-  .main__content p {
-    margin-top: 2rem;
-    font-size: 1.5rem;
-  }
-} */
+.about__card p {
+  font-family: "Montserrat", sans-serif;
+}
 
-/* END LANDING SECTION */
+.about__img img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  /* padding-right: 50px; */
+  border-radius: 25px;
+}
+
+@media (max-width: 1000px) {
+  .about__container {
+    display: block;
+    font-size: 80%;
+  }
+  .about__card h3 h1 p {
+    margin-top: 1rem;
+    position: relative;
+    /* margin: -3rem 0 2rem 1rem; */
+    padding: 1rem;
+    background: rgba(white, 0.8);
+  }
+}
+
+/* END ABOUT SECTION */
