@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 
+body {
+  /* overflow: hidden; */
+}
+
 .site-header {
   background-color: rgba(247, 247, 247, 0.85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -43,6 +47,11 @@
   color: rgb(211, 211, 211);
 }
 
+.scroll__container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 /* LANDING SECTION */
 .main {
   background-color: white;
@@ -73,7 +82,7 @@
 
 .main__content p {
   font-size: 2rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main__img--container img {
@@ -132,7 +141,10 @@
 }
 
 .about__card p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  line-height: 40px;
 }
 
 .about__img img {
@@ -150,11 +162,73 @@
   }
   .about__card h3 h1 p {
     margin-top: 1rem;
+    margin-bottom: 1rem;
     position: relative;
     /* margin: -3rem 0 2rem 1rem; */
     padding: 1rem;
     background: rgba(white, 0.8);
   }
+  .about__img img {
+    display: flex;
+  }
+
+  .about__card h3 {
+    padding-top: 2rem;
+  }
 }
 
 /* END ABOUT SECTION */
+
+/* SKILLS SECTION */
+
+.skills__container {
+  /* width: fit-content; */
+  background: #f0f1f8;
+  padding: 50px 100px 50px 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.skills__container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.img-column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .img-column {
+    width: 100%;
+  }
+}
+
+.skills-text {
+  text-align: center;
+}
+
+.skills-text h3 {
+  font-family: "DM Serif Display", serif;
+}
+/* END SKILLS SECTION */
+
+/* FOOTER SECTION */
+.footer {
+  padding: 100px 100px 100px 100px;
+}
+
+.contact-form .form-group {
+  padding-bottom: 10px;
+}
+
+button .form-control {
+  background: -webkit-linear-gradient(rgb(165, 70, 255), rgb(180, 245, 234));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* END FOOTER SECTION */
