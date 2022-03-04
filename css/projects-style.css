@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+.proj-container {
+  margin: 50px 20px 50px 20px;
+}
+
+.site-header {
+  background-color: rgba(247, 247, 247, 0.85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #e0e0e0;
+  transition: color 0.15s ease-in-out;
+  text-decoration: none;
+}
+.site-header a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.header_area .main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 5rem;
+  font-family: "Questrial", sans-serif;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.header_area .main-menu .navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 1.7rem;
+  color: rgb(0, 0, 0);
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+  color: rgb(211, 211, 211);
+}
+
+.scroll__container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/*MAKKI UI*/
+.makki__ui .makki__ui-text {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+/*END MAKKI UI*/
+
+/*MAKKI WEB*/
+.makki__web .makki__web-text {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+/*END MAKKI WEB*/
